@@ -1,0 +1,67 @@
+/* background */
+
+.welcome-page {
+    background-image: url(../img/bg.jpg);
+    padding: 35px 80px 80px 80px;
+    color: #e7e7eb;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* logo*/
+
+.logo img {
+    width: 150px;
+}
+
+/* instructions */ 
+
+.instructions {
+    padding-top: 50px;
+}
+
+.title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    width: 400px;
+    line-height: 50px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.instructions-paragraph {
+    padding-top: 30px;
+}
+
+.text-fucsia {
+    color: #d20094;
+    font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.instructions-paragraph p {
+    width: 550px;
+    padding-top: 10px;
+}
+
+.instructions-list {
+    padding: 40px 0 40px 0;
+    padding-left: 25px;
+    line-height: 25px;
+}
+
+.instructions-list li {
+    list-style-type: disc;
+}
+
+/* checkbox */
+
+
+/* button */
+
