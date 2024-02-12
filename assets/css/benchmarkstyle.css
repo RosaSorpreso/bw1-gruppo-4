@@ -39,11 +39,11 @@ description font Inter (16px)
 }
 
 /* cazzo imbocchio che conta i secondi mancanti */ 
-
+/* sto ancora studiando la reference */
 .timer{
     display: flex;
     position: absolute;
-    color: #fff;
+    color: #eee;
     top: 50px;
     left: 75%;
 }
@@ -71,7 +71,7 @@ description font Inter (16px)
   .base-timer__path-remaining {
     stroke-width: 7px;
     stroke-linecap: round;
-    transform: rotate(360deg);
+    transform: rotate(85deg);
     transform-origin: center;
     transition: 1s linear all;
     fill-rule: nonzero;
