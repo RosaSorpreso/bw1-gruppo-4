@@ -40,3 +40,5 @@ const wrong_QuestionsPercentage = document.getElementById('wrong-result-percenta
 
 wrong_QuestionsPercentage.textContent = `${wrongQuestionsPercentage}%`
 wrong_QuestionsPercentage.style.display = 'block';
+
+
