@@ -1,0 +1,49 @@
+body {
+    background-image: url(../assets/img/bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+   
+}
+
+header {
+    width: 100%; 
+    position: fixed; 
+  
+}
+
+header img{
+    width: 15%;
+    margin-top: 35px;
+    margin-left: 135px;
+}
+
+.container{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+ h2{
+    font-size: 60px;
+    padding-top: 100px ;
+}
+
+.circle{
+    box-sizing: content-box;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border: 40px solid #1ce0d7;
+    border-left-color: #aa177e;
+    rotate: 135deg;
+    position: absolute;
+    align-items: center;
+}
+
+button {
+    margin-top: 480px; 
+  }
