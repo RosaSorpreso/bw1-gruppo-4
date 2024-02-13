@@ -101,30 +101,28 @@ const question = [
 
 // logica quiz app //
 const questionElement = document.querySelector('.question');
-const answerButtons = document.querySelector('.btn');
+const answerButtons = document.querySelector('.answer');
 const nextButton = document.querySelector('.next-btn');
 
 let currentQuestionIndex = 0;
 let score = 0; 
 
-window.onload=startQuiz(); 
+window.onload= startQuiz; 
 
 
 
 // funzione di avvio del quiz
 function startQuiz(){  
-    correntQuestionIndex = 0 ;
+    currentQuestionIndex = 0 ;
     score = 0;
-    nextButton.innerHtml= "Next";
+    nextButton.innerHTML= "Next";
     showQuestion();
 }
-// funzione di inserimento domane dell'array nel DOM //
+// funzione di inserimento domande dell'array nel DOM //
 function showQuestion(){
-    //resetState();
+    resetState();
     let currentQuestion = question[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    let questionElement = document.querySelector('.question');
-    let answerButtons = document.querySelector('.answer');
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;    
     let answer = [...currentQuestion.incorrect_answers, currentQuestion.correct_answer];
     answers = answer.sort(() => Math.random() - 0.5);
@@ -142,36 +140,29 @@ function resetState(){
     let questionElement = document.querySelector('.question');
     let answerButtons = document.querySelector('.answer');
     nextButton.style.display = "none";
-    while(answerButtosn.firstChild){
+    while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+
 // funzione che permette la selezione delle risposte, che permette il proseguo delle domande
-let correctAnswers = [];
-let incorrectAnswers = [];
 function selectAnswer(e){
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
-        selectedBtn.classList.add("correct");
-        correctAnswer.push(selectedBtn);
-        score = correctAnswers.length; 
-        score++; // funzione probabilmente da eliminare. 
-    }else{
-        selectedBtn.classList.add("incorrect");
-        incorrectAnswers.push(selctedBtn);
-    }
-    Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === "true"){
-            button.classList.add("correct");
-        }
-        button.ariaDisabled = true;
-    });
-    nextButton.style.display = "block";
+  const selectedBtn = e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
+  if(isCorrect){
+      selectedBtn.classList.add("correct"); 
+      score++;
+  }else{
+      selectedBtn.classList.add("incorrect");
+  }
+  Array.from(answerButtons.children).forEach(button => {
+      if(button.dataset.correct === "true"){
+          button.classList.add("correct");
+      }
+      button.disabled = true;
+  });
+  nextButton.style.display = "block";
 }
-
-
-// funzione che regola il bottone next e carica la prossima domanda oppure il result 
 
 function handleNextButton(){
     currentQuestionIndex++;
@@ -181,8 +172,6 @@ function handleNextButton(){
         showScore();
     }
 }
-
-
 nextButton.addEventListener("click",()=>{
     if(currentQuestionIndex < question.length){
         handleNextButton();
@@ -191,15 +180,10 @@ nextButton.addEventListener("click",()=>{
     }
 });
 
-
-
-
-// funzione che mostra lo score.
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
     nextButton.innerHTML = "play Again";
     nextButton.style.display = "block";
 
-} //con questa funzione e' possibile incorporare la pagina di result
-                      //funzione ancora da scrivere 
+}
