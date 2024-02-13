@@ -62,6 +62,40 @@
 
 /* checkbox */
 
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 485px;
+    left: 50px;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+  }	
 
+  .container input:checked ~ .checkmark {
+    background-color: #00FFFF;
+    border: 2px solid #00FFFF;
+  }
+  
 /* button */
 
+.btn-proced{
+    display: inline-block;
+    background-color: #00FFFF;
+    color: black;
+    padding: 10px 35px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #00aced, 0 0 8px #00aced;
+    cursor: pointer;
+    margin-left: 90px;
+}
