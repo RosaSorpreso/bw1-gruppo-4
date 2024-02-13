@@ -37,6 +37,10 @@ header img {
     margin-right: 135px;
 }
 
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
 
  .circle {
     box-sizing: content-box;
