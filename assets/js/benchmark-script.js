@@ -118,7 +118,7 @@ function startQuiz(){
     nextButton.innerHTML= "Next";
     showQuestion();
 }
-// funzione di inserimento domane dell'array nel DOM //
+// funzione di inserimento domande dell'array nel DOM //
 function showQuestion(){
     resetState();
     let currentQuestion = question[currentQuestionIndex];
