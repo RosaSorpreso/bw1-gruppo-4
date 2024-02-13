@@ -71,7 +71,7 @@ header img {
 }
 
 .content p {
-    font-size: 20px;
+
     padding-top: 5px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -79,7 +79,7 @@ header img {
 
 button {
     margin-top: 480px;
-    padding: 10px 35px 10px 35px;
+    padding: 10px 45px 10px 45px;
     border: 2px solid white;
     background-color: transparent;
     color: white;
@@ -88,4 +88,35 @@ button {
 .content1 p{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    
+}
+
+.content1 #result{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    color:  #00FFFF;
+}
+#result + p{
+    padding-top: 20px;
+}
+
+
+.left-centered-div {
+    position: absolute;
+    left: -200%;
+    /* Add any additional styling as needed */
+    color: white;
+    margin-left: 20px; /* Ad esempio, la larghezza dell'elemento2 è 20px */
+    transform: translateY(-50%);
+}
+
+
+.right-centered-div {
+    position: absolute;
+    right: -200%;
+    /* Add any additional styling as needed */
+    color: white;
+    padding-right: 20px; /* Ad esempio, la larghezza dell'elemento2 è 20px */
+    transform: translateY(-50%);
 }
