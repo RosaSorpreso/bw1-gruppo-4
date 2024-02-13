@@ -1,12 +1,12 @@
-const stars = document.querySelectorAll(".stars svg");
-
-//loop
-stars.forEach((star, index1) => {
+const stars = document.querySelectorAll(".star");
+let currentRating = 0;
+stars.forEach((star, index) => {
   star.addEventListener("click", () => {
-    stars.forEach((star, index2) => {
-      index1 >= index2
-        ? star.classList.add("active")
-        : star.classList.remove("active");
-    });
+    currentRating = index + 1;
+    updateRating();
   });
 });
+
+function updateRating() {
+  console.log("Rating", currentRating);
+}
