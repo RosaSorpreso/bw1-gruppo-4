@@ -58,6 +58,11 @@ h2 {
 
 .stars svg {
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.stars svg.active {
+  color: #00ffff;
 }
 
 .comment {
