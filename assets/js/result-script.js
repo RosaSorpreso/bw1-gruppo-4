@@ -39,3 +39,4 @@ wrong_QuestionsPercentage.style.display = 'block';
 
 
 // GRAFICO CIAMBELLA DI DOAMANDE
+
