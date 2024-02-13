@@ -35,23 +35,23 @@ description font Inter (16px)
 
 .header img{
     width: 200px;
-    
+    margin: 30px 50px;
 }
 
 /* cazzo imbocchio che conta i secondi mancanti */ 
-
+/* sto ancora studiando la reference */
 .timer{
     display: flex;
     position: absolute;
-    color: #fff;
-    top: 15%;
+    color: #eee;
+    top: 50px;
     left: 75%;
 }
 
 .base-timer {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   
   .base-timer__svg {
@@ -71,7 +71,7 @@ description font Inter (16px)
   .base-timer__path-remaining {
     stroke-width: 7px;
     stroke-linecap: round;
-    transform: rotate(360deg);
+    transform: rotate(85deg);
     transform-origin: center;
     transition: 1s linear all;
     fill-rule: nonzero;
@@ -92,14 +92,15 @@ description font Inter (16px)
   
   .base-timer__label {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
   }
+
 
 /* quizzone contenitore */ 
 .quiz-app{
@@ -115,7 +116,7 @@ description font Inter (16px)
 .quiz-app .container .question{
     font-family: 'Outfit', sans-serif;
     font-size: 60px;
-
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -132,17 +133,17 @@ description font Inter (16px)
 
 .quiz-app .container .answer .btn{
     outline: none;
-    padding: 16px 50px;
-    margin: 8px;
-    background: transparent;
+    padding: 15px 50px;
+    margin: 9px;
+    background-color: #b3b1b21f;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px;
-    border: 2px outset;
-    
+    border-radius: 30px;
+    border: 1px outset;
+    transition: color 0.3s ease;
 }
-#checked{
+.quiz-app .container .answer .btn:hover{
     background: linear-gradient(90deg, #d20094, #900080);
 }
 
@@ -151,4 +152,11 @@ description font Inter (16px)
 .footer{
     color: white;
     text-align: center;
+    font-size: 16px;
+}
+
+.footer .answer-number{
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
 }
