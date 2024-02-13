@@ -42,25 +42,7 @@ h2 {
     font-weight: 600;
 }
 
- .circle {
-    box-sizing: content-box;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    border: 40px solid #00FFFF;
-    border-left-color: #D20094; 
-    rotate: 135deg;
-    position: absolute;
-    align-items: center;
-   
-    
-}
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-  
-  
-/* NON CANCELLATE CHE VOLEVO FARE UN AGGIUNTA E COLOARRE ANCHE IL BACKGROUND IN BASE ALLA PARCENTUALE SE RIESCO
 .circle {
     box-sizing: content-box;
     border-radius: 50%;
@@ -71,17 +53,8 @@ h2 {
     rotate: 135deg;
     position: absolute;
     align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: conic-gradient(
-        #D20094 100%,
-        #00FFFF 23%,
-        transparent 80%,
-        transparent 20%,
-    );
-    z-index: 2;
-} */
+}
+
 .content {
     text-align: center;
     position: absolute;
@@ -94,14 +67,13 @@ h2 {
 }
 .content h2 {
     font-size: 60px;
-    padding-top: 110px;
+    padding-top: 90px;
     font-family: 'Outfit', sans-serif;
 }
 
 .content p {
-    font-size: 16px;
-    padding-top: 5px;
-    font-family: 'Inter', sans-serif
+    padding-top: 10px;
+    font-size: 1.4rem;
 }
 
 button {
@@ -110,13 +82,6 @@ button {
     border: 2px solid white;
     background-color: transparent;
     color: white;
-    /* Effetti di transizione */
-     transition: background-color 0.3s ease;
-}
-
-/* Effetto hover */
-button:hover {
-    background: linear-gradient(#00FFFF,#D20094)
 }
 
 .content1 p{
@@ -139,8 +104,9 @@ button:hover {
 .left-centered-div {
     position: absolute;
     left: -200%;
+    /* Add any additional styling as needed */
     color: white;
-    margin-left: 20px; 
+    margin-left: 20px; /* Ad esempio, la larghezza dell'elemento2 è 20px */
     transform: translateY(-50%);
 }
 
@@ -148,10 +114,8 @@ button:hover {
 .right-centered-div {
     position: absolute;
     right: -200%;
+    /* Add any additional styling as needed */
     color: white;
-    padding-right: 20px; 
+    padding-right: 20px; /* Ad esempio, la larghezza dell'elemento2 è 20px */
     transform: translateY(-50%);
 }
-
-
-
