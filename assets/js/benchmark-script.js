@@ -100,9 +100,9 @@ const question = [
   ];
 
 // logica quiz app //
-const questionElement = document.getElementsByClassName("question");
-const answerButtons = document.getElementsByClassName("btn");
-const nextButton = document.getElementsByClassName("next-btn");
+const questionElement = document.querySelector('.question');
+const answerButtons = document.querySelector('.btn');
+const nextButton = document.querySelector('.next-btn');
 
 let currentQuestionIndex = 0;
 let score = 0; 
@@ -171,7 +171,8 @@ function selectAnswer(e){
 }
 
 
-// funzione che regola il bottone next.
+// funzione che regola il bottone next e carica la prossima domanda oppure il result 
+
 function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < question.length){
@@ -180,6 +181,7 @@ function handleNextButton(){
         showScore();
     }
 }
+
 
 nextButton.addEventListener("click",()=>{
     if(currentQuestionIndex < question.length){
@@ -192,7 +194,7 @@ nextButton.addEventListener("click",()=>{
 
 
 
-
+// funzione che mostra lo score.
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
