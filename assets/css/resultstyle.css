@@ -72,16 +72,12 @@ header img {
 }
 .content h2 {
     font-size: 60px;
-    padding-top: 90px;
+    padding-top: 110px;
     font-family: 'Outfit', sans-serif;
 }
 
 .content p {
-<<<<<<< HEAD:css/resultstyle.css
-
-=======
     font-size: 16px;
->>>>>>> 23a01eb7a9273155e354335d267fff5a410cc05f:assets/css/resultstyle.css
     padding-top: 5px;
     font-family: 'Inter', sans-serif
 }
@@ -129,7 +125,6 @@ button {
     padding-right: 20px; /* Ad esempio, la larghezza dell'elemento2 è 20px */
     transform: translateY(-50%);
 }
-
 
 
 
