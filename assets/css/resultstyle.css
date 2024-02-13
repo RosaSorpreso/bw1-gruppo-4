@@ -47,18 +47,21 @@ header img {
 }
 
 
-
  .circle {
     box-sizing: content-box;
     border-radius: 50%;
     width: 250px;
     height: 250px;
     border: 40px solid #00FFFF;
-    border-left-color: #D20094;
+    border-left-color: #D20094; 
     rotate: 135deg;
     position: absolute;
     align-items: center;
-} 
+   
+    
+}
+
+
 /* NON CANCELLATE CHE VOLEVO FARE UN AGGIUNTA E COLOARRE ANCHE IL BACKGROUND IN BASE ALLA PARCENTUALE SE RIESCO
 .circle {
     box-sizing: content-box;
