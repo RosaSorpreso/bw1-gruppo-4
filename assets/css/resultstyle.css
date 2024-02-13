@@ -64,25 +64,6 @@ header img {
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
   
-  .slice {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    clip: rect(0px, 50px, 100px, 0px); /* Questo imposta la dimensione della fetta */
-    transform: rotate(0deg);
-    transform-origin: 100% 50%;
-  }
-  
-  .red {
-    background-color: red;
-    z-index: 2;
-  }
-  
-  .green {
-    background-color: green;
-    z-index: 1;
-    transform: rotate(180deg);
-  }
   
 /* NON CANCELLATE CHE VOLEVO FARE UN AGGIUNTA E COLOARRE ANCHE IL BACKGROUND IN BASE ALLA PARCENTUALE SE RIESCO
 .circle {
