@@ -1,8 +1,3 @@
-/*fonts google */ 
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 
 body {
     background-image: url(../img/bg.jpg);
@@ -16,11 +11,8 @@ body {
     /* Centra verticalmente */
     height: 100%;
     box-sizing: border-box;
- /* font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
 
 header {
@@ -46,6 +38,10 @@ header img {
     margin-right: 135px;
 }
 
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
 
 
 .circle {
@@ -77,13 +73,8 @@ header img {
 }
 
 .content p {
-<<<<<<< HEAD:css/resultstyle.css
-
-=======
-    font-size: 16px;
->>>>>>> 23a01eb7a9273155e354335d267fff5a410cc05f:assets/css/resultstyle.css
-    padding-top: 5px;
-    font-family: 'Inter', sans-serif
+    padding-top: 10px;
+    font-size: 1.4rem;
 }
 
 button {
