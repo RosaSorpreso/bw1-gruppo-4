@@ -2,18 +2,12 @@
 function handleClick(event) {
   const clickedStar = event.target;
   const stars = document.querySelectorAll(".star path");
+  const clickedStarIndex = Array.from(stars).findIndex((s) => s == clickedStar);
 
-  let foundClickedStar = false;
-  for (const star of stars) {
-    if (star === clickedStar) {
-      foundClickedStar = true;
-    }
-    if (foundClickedStar) {
-      star.setAttribute("fill", "#3a2c7a");
-    } else {
-      star.setAttribute("fill", "#00FFFF");
-    }
-  }
+  stars.forEach((star, i) => {
+    let color = i <= clickedStarIndex ? "#00FFFF" : "#3a2c7a";
+    star.setAttribute("fill", color);
+  });
 }
 
 const starPaths = document.querySelectorAll(".star path");
