@@ -55,15 +55,11 @@ h2 {
 }
   */
 
-.grafico {
-  width: 250px;
-  height: 250px;
-  text-align: center;
-}
-
 #myChart {
   align-items: center;
-  
+  position: absolute;
+  z-index: 0;
+
 }
 
 .content {
@@ -75,6 +71,7 @@ h2 {
   text-align: center;
   position: absolute;
   color: white;
+  z-index: 1;
 }
 .content h2 {
   font-size: 60px;
@@ -85,6 +82,7 @@ h2 {
 .content p {
   padding-top: 10px;
   font-size: 1.4rem;
+
 }
 
 button {
@@ -127,3 +125,4 @@ button {
   padding-right: 20px; /* Ad esempio, la larghezza dell'elemento2 è 20px */
   transform: translateY(-50%);
 }
+
