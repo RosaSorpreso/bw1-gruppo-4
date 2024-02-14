@@ -89,3 +89,8 @@ svg {
   box-shadow: 0 0 10px 2px #00ffff;
   border: none;
 }
+
+#btnLink {
+  text-decoration: none;
+  color: #0b113b;
+}

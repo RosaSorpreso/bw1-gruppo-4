@@ -14,3 +14,17 @@ const starPaths = document.querySelectorAll(".star path");
 for (const path of starPaths) {
   path.addEventListener("click", handleClick);
 }
+
+const commentField = document.querySelector("insertText");
+
+function btnClick() {
+  let btn = document.querySelector("#btnLink");
+  let imputText = document.querySelector(".insertText");
+  if (imputText === "") {
+    btn.disabled() = true;
+  } else {
+    btn.disabled() = false;
+  }
+}
+
+btnClick()
