@@ -25,7 +25,7 @@ let timerId;
 let currentQuestionIndex = 0;
 let score = 0; 
 
-
+window.onload = startQuiz;
 
 // funzione di avvio del quiz
 function startQuiz(){  
