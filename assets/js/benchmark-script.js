@@ -1,4 +1,4 @@
-// array con le domande 
+// array con le domande // da implementare qui la fetch // 
 const question = [
     {
       category: "Science: Computers",
@@ -110,7 +110,6 @@ let score = 0;
 window.onload= startQuiz; 
 
 
-
 // funzione di avvio del quiz
 function startQuiz(){  
     currentQuestionIndex = 0 ;
@@ -134,7 +133,8 @@ function showQuestion(){
         if(answer === currentQuestion.correct_answer){
             button.dataset.correct = true;}
         button.addEventListener("click", selectAnswer);
-      setTimeout(() => {
+        clearTimeout(timerId);
+      timerId = setTimeout(() => {
       handleNextButton();}, 30000);
       })}
 
@@ -165,6 +165,7 @@ function selectAnswer(e){
       button.disabled = false;
   });
   nextButton.style.display = "block";
+  clearTimeout(timerId);
 }
 
 function handleNextButton(){
