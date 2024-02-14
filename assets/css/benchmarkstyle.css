@@ -25,6 +25,7 @@ description font Inter (16px)
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 100vh;
     width: 100%;
     min-height: 100vh;
     padding: 10px;
@@ -39,7 +40,7 @@ description font Inter (16px)
 }
 
 /* cazzo imbocchio che conta i secondi mancanti */ 
-/* sto ancora studiando la reference */
+
 .timer{
     display: flex;
     position: absolute;
@@ -115,7 +116,7 @@ description font Inter (16px)
 
 .quiz-app .container .question{
     font-family: 'Outfit', sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -146,18 +147,14 @@ description font Inter (16px)
 .quiz-app .container .answer .btn:hover{
     background: linear-gradient(90deg, #d20094, #900080);
 }
-.quiz-app .container .answer .btn:focus{
+.quiz-app .container .answer .btn:focus[disabled]{
   background: linear-gradient(90deg, #d20094, #900080);
-}
-.quiz-app .container .answer .btn:hover:not([disable]){
-  background: linear-gradient(90deg, #d20094, #900080);
-}
-.quiz-app .container .answer .btn:disabled{
-  cursor: no-drop;
 }
 
+
 .next-btn{
-  display: flex;
+  position: relative;
+  left: 85%;
   background-color: #00FFFF;
   color: black;
   padding: 10px 35px;
