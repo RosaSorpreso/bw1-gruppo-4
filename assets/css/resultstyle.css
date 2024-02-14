@@ -55,11 +55,15 @@ h2 {
 }
   */
 
-#myChart {
+.grafico {
   width: 250px;
   height: 250px;
-  position: absolute;
+  text-align: center;
+}
+
+#myChart {
   align-items: center;
+  
 }
 
 .content {

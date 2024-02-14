@@ -67,38 +67,13 @@
         <button>RATE US</button>
       </a>
     </div>
-
-    <div id="chart">
-      <div>
-        <canvas class="my_chart" id="myChart"></canvas>
+      <div class="grafico">
+        <canvas id="myChart"></canvas>
       </div>
-    </div>
-
-    <div>
-      <canvas class="circle" id="myChart"></canvas>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      const data = {
-        labels: ["Rosso", "Verde"],
-        datasets: [
-          {
-            label: "Dati",
-            data: [40, 60],
-            backgroundColor: ["red", "green"],
-          },
-        ],
-      };
-
-      const config = {
-        type: "doughnut",
-        data: data,
-      };
-
-      const myChart = new Chart(document.getElementById("myChart"), config);
-    </script>
 
     <script src="./assets/js/result-script.js"></script>
+    <script src="./assets/js/grafico.js"></script>
   </body>
 </html>
