@@ -47,17 +47,14 @@ wrong_Questions.style.display = "block";
 
 // PERCENTUALE DOAMDE GIUSTE E SBAGLIATE
 const correctQuestionsPercentage = 23;
-const correct_QuestionsPercentage = document.getElementById(
-  "correct-result-percentage"
-);
+const correct_QuestionsPercentage = document.getElementById("correct-result-percentage");
 
 correct_QuestionsPercentage.textContent = `${correctQuestionsPercentage}%`;
 correct_QuestionsPercentage.style.display = "block";
 
+
 const wrongQuestionsPercentage = 14;
-const wrong_QuestionsPercentage = document.getElementById(
-  "wrong-result-percentage"
-);
+const wrong_QuestionsPercentage = document.getElementById("wrong-result-percentage");
 
 wrong_QuestionsPercentage.textContent = `${wrongQuestionsPercentage}%`;
 wrong_QuestionsPercentage.style.display = "block";
