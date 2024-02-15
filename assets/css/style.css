@@ -1,103 +1,121 @@
-/* background */
 
-.welcome-page {
+/*INIZIO CSS PARTE COMUNE ALLE 4 PAGE*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+
+body{
     background-image: url(../img/bg.jpg);
-    padding: 35px 80px 80px 80px;
-    color: #e7e7eb;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    min-height: 100vh;
-    box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* logo*/
-
-.logo img {
-    width: 150px;
-}
-
-/* instructions */ 
-
-.instructions {
-    padding-top: 50px;
-}
-
-.title {
     font-family: 'Outfit', sans-serif;
-    font-size: 60px;
-    width: 400px;
-    line-height: 50px;
+    color: white;
+    margin-left: 90px ;
+    margin-top: 30px ;
 }
 
-.bold {
+
+header img{
+    width: 13%;
+}
+
+
+/*FINE CSS PARTE COMUNE ALLE 4 PAGE*/
+.welcomeContainer{
+    color: #FFF;
+   
+}
+
+.welcomeContainer .bold{
+    font-weight: 700;
+}
+
+.welcomeContainer h2{
+    margin: 60px 0 30px 0;
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+.welcomeBox{
+    margin-top: 60px;
+}
+.welcomeContainer h3 {
+    color: #C2148E;
+    font-size: 1.8rem;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.instructions-paragraph {
-    padding-top: 30px;
+.welcomeContainer p, .welcomeContainer ul{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 40px;
 }
 
-.text-fucsia {
-    color: #d20094;
-    font-size: 30px;
-    font-family: 'Outfit', sans-serif;
-}
-
-.instructions-paragraph p {
-    width: 550px;
-    padding-top: 10px;
-}
-
-.instructions-list {
-    padding: 40px 0 40px 0;
-    padding-left: 25px;
-    line-height: 25px;
-}
-
-.instructions-list li {
+.welcomeContainer ul {
     list-style-type: disc;
+    margin: 0 0 0px 25px;
 }
 
-/* checkbox */
-
-.instructions input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
+.welcomeBox .welcomeBox + input {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
     display: flex;
-}
-
-.instructions .checkmark {
-    top: 200px;
-    left: 50px;
-    height: 15px;
-    width: 15px;
-    border: 3px solid white;
-    display: inline-block;
-    margin-right: 10px;
     align-items: center;
+    line-height: 60vh;
+    position: relative;
 }
 
-.checkmark input:checked {
+.check{
+    width: 30px;
+    height: 15px;
+    border: 1px solid #FFF;
+}
+
+
+.btn {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 15px 50px;
     background-color: #00FFFF;
-    border: 2px solid #00FFFF;
+    border: none;
+    box-shadow: 0px 0px 25px 2px rgba(0,255,255,0.9);;
+    margin-left: 30%;
 }
 
-/* button */
 
-button {
-    width: 180px;
-    height: 50px;
-    background-color: #00FFFF;
-    margin-left: 250px;
-    box-shadow: 0 0 10px 2px #00FFFF;
-    border: none
+/* Stile del falso elemento di checkbox */
+input[type="checkbox"] {
+    display: none; 
 }
 
-button p {
-    font-size: 1.1rem;
+.check + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff; 
+    position: relative;
+    top: 4px; 
+    margin-right: 5px; 
+    cursor: pointer; 
+}
+
+/* Stile del falso elemento di checkbox quando è selezionato */
+.check:checked + label::before {
+    background-color: #fff; 
+    border-color: #fff; 
+}
+
+/* Stile del falso elemento di checkbox quando è selezionato (simula la spunta) */
+.check:checked + label::before {
+    content: '\2713';
+    color: #000; 
+    text-align: center;
+    left: auto;
+    top: auto;
+}
+
+
+
+#ciaone {
+    display: none;
 }
