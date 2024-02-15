@@ -40,10 +40,12 @@ body {
 }
 .sezioneDx, .dx {
     color: red;
+    text-align: right;
 }
 
 .sezioneSx, .sx {
     color: green;
+    text-align: left;
 }
 
 
@@ -52,7 +54,6 @@ body {
     margin: 70px;
     font-size: 60px;
     padding: 90px;
-    text-align: center;
 }
 
 .sezioneSx p,
@@ -92,8 +93,8 @@ body {
 
 .circle::before {
     background-color: #0B113C;
-    height: 290px;
-    width: 290px;
+    height: 320px;
+    width: 320px;
     content: "";
     position: absolute;
     border-radius: 50%;
