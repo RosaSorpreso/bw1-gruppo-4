@@ -97,12 +97,12 @@ nextButton.addEventListener("click",()=>{
     }
 });
 
-// mostra lo score finale.
+// mostra lo score finale. LA PAGINA NON DEVE MOSTRARE LO SCORE
 function showScore(){
     console.log(score);
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
-    nextButton.innerHTML = "play Again";
+    nextButton.innerHTML = "play Again"; // questo bottone deve dare la possibilità di andare a visualizzare lo score sulla pagina result
     nextButton.style.display = "block";
 }
 // funzione che resetta il timer ad ogni domanda 
