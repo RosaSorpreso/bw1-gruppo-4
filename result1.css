@@ -1,0 +1,21 @@
+
+/*INIZIO CSS WELCOME PAGE*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+
+body{
+    background-image: url(./assets/img/bg.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+h2{
+    font: bold;
+}
+
+#header img{
+    width: 13%;
+    margin: 50px 0 25px 0px;
+}
+
