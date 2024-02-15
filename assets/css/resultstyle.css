@@ -81,8 +81,8 @@ body {
 }
 
 .circle {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 40px black;
@@ -93,8 +93,8 @@ body {
 
 .circle::before {
     background-color: #0B113C;
-    height: 320px;
-    width: 320px;
+    height: 290px;
+    width: 290px;
     content: "";
     position: absolute;
     border-radius: 50%;
