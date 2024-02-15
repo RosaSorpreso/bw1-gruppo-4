@@ -38,11 +38,18 @@ body {
     margin-bottom: 20px;
     font-size: 50px;
 }
+.sezioneDx {
+    color: red;
+}
+
+.sezioneSx {
+    color: green;
+}
+
 
 .sezioneSx,
 .sezioneDx {
     margin: 70px;
-    color: white;
     font-size: 60px;
     padding: 90px;
     text-align: center;
@@ -99,22 +106,23 @@ body {
     margin-top: 30px;
 }
 
-#btn {
+a {
     margin: 0 auto;
     margin-top: 10px;
     display: block;
     padding: 20px;
     width: 15%;
-    color: white;
     font-size: 25px;
     cursor: pointer;
     border: 1px solid white;
     text-align: center;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 
-#btn:hover {
+a:hover {
     background-color: #00FFFF;
     color: #D20094;
 }

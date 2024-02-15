@@ -7,15 +7,17 @@ let votoDiPartenza = 0, // parte da 0 mi riempie il 25 percento
   votoPercentualeFinale = 25,
   speed = 5;
 
-let progress = setInterval(() => {
+let progress = setInterval(() => { // funzione a intervalli specificati da speed
   votoDiPartenza++;
 
   graficoCiambella.style.background = `conic-gradient(#00FFFF ${votoDiPartenza * 3.6}deg, #D20094 0deg)`
 
   if (votoDiPartenza === votoPercentualeFinale) {
-    clearInterval(progress);
+    clearInterval(progress); // una volta raggiunta la poszione a scelta
   }
 }, speed);
+
+
 
 
 // RISULTATO ESITO ESAME
@@ -27,7 +29,11 @@ let resultElement = document.getElementById('result');
 
 if (YourPercentage >= promosso) resultElement.textContent = "You passed the exam";
 else resultElement.textContent = "You did not pass the exam";
+// RISULTATO ESITO h3 CPNGRATULAZOIONI
 
+let congrat = document.getElementById('complimenti');
+if (YourPercentage >= promosso) congrat.textContent = "Congratulation!";
+else congrat.textContent = "We are so sorry";
 
 
 // RISULTATO ESITO DOMANDE GIUSTE/SBAGLIATE SULLE TOTALI
@@ -58,3 +64,4 @@ const wrong_QuestionsPercentage = document.getElementById("wrong-result-percenta
 
 wrong_QuestionsPercentage.textContent = `${wrongQuestionsPercentage}%`;
 wrong_QuestionsPercentage.style.display = "block";
+
