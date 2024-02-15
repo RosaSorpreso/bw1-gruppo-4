@@ -1,12 +1,11 @@
 
-/*INIZIO CSS WELCOME PAGE*/
+/*INIZIO CSS PARTE COMUNE ALLE 4 PAGE*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
 
 body{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
     font-family: 'Outfit', sans-serif;
     color: white;
     margin-left: 90px ;
@@ -19,6 +18,7 @@ header img{
 }
 
 
+/*FINE CSS PARTE COMUNE ALLE 4 PAGE*/
 .welcomeContainer{
     color: #FFF;
    
