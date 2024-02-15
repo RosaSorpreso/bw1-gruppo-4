@@ -4,7 +4,7 @@ let graficoCiambella = document.querySelector('.circle'),
   centro = document.querySelector('.main');
 
 let votoDiPartenza = 0, // parte da 0 mi riempie il 25 percento
-  votoPercentualeFinale = 25,
+  votoPercentualeFinale = 90,
   speed = 5;
 
 let progress = setInterval(() => { // funzione a intervalli specificati da speed
