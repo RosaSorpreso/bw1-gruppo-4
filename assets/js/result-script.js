@@ -1,45 +1,34 @@
 // GRAFICO CIAMBELLA
 
-
 let graficoCiambella = document.querySelector('.circle'),
-centro = document.querySelector('.main');
+  centro = document.querySelector('.main');
 
 let votoDiPartenza = 0, // parte da 0 mi riempie il 25 percento
-    votoPercentualeFinale = 25,
-    speed = 5;
+  votoPercentualeFinale = 25,
+  speed = 5;
 
 let progress = setInterval(() => {
-    votoDiPartenza ++;
+  votoDiPartenza++;
 
-    graficoCiambella.style.background = `conic-gradient(#00FFFF ${votoDiPartenza  * 3.6}deg, #D20094 0deg)`
+  graficoCiambella.style.background = `conic-gradient(#00FFFF ${votoDiPartenza * 3.6}deg, #D20094 0deg)`
 
-    if(votoDiPartenza  === votoPercentualeFinale){
-        clearInterval(progress);
-    }
+  if (votoDiPartenza === votoPercentualeFinale) {
+    clearInterval(progress);
+  }
 }, speed);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // RISULTATO ESITO ESAME
-const isTrue = false;
-const resultElement = document.getElementById("result");
+let YourPercentage = 20;
+let promosso = 60;
 
-resultElement.textContent = isTrue
-  ? "You passed the exam"
-  : "You did not pass the exam";
-resultElement.style.display = "block"; // rendiamo visibile il risultato
+
+let resultElement = document.getElementById('result');
+
+if (YourPercentage >= promosso) resultElement.textContent = "You passed the exam";
+else resultElement.textContent = "You did not pass the exam";
+
+
 
 // RISULTATO ESITO DOMANDE GIUSTE/SBAGLIATE SULLE TOTALI
 const correctQuestions = 23;
@@ -54,6 +43,7 @@ const wrong_Questions = document.getElementById("wrong-question");
 
 wrong_Questions.textContent = `${wrongQuestions}/${totQuestion}`;
 wrong_Questions.style.display = "block";
+
 
 // PERCENTUALE DOAMDE GIUSTE E SBAGLIATE
 const correctQuestionsPercentage = 23;
