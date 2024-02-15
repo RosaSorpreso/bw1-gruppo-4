@@ -41,13 +41,13 @@ const correctQuestions = 23;
 const totQuestion = 50;
 const correct_Questions = document.getElementById("correct-question");
 
-correct_Questions.textContent = `${correctQuestions}/${totQuestion}`;
+correct_Questions.textContent = `${correctQuestions}/${totQuestion} questions`;
 correct_Questions.style.display = "block";
 
 const wrongQuestions = 14;
 const wrong_Questions = document.getElementById("wrong-question");
 
-wrong_Questions.textContent = `${wrongQuestions}/${totQuestion}`;
+wrong_Questions.textContent = `${wrongQuestions}/${totQuestion} questions`;
 wrong_Questions.style.display = "block";
 
 
