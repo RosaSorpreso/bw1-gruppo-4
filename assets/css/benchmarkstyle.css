@@ -14,29 +14,12 @@ description font Inter (16px)
 */ 
 
 
-*{
-    border: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-}
-/*  background */
 
 .main-graph{
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     min-width: 100vh;
     width: 100%;
-    min-height: 100vh;
     padding: 10px;
     box-sizing: border-box;
-}
-
-/* logo */ 
-
-.header img{
-    width: 200px;
-    margin: 30px 50px;
 }
 
 /* cazzo imbocchio che conta i secondi mancanti */ 
