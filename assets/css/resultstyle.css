@@ -38,11 +38,11 @@ body {
     margin-bottom: 20px;
     font-size: 50px;
 }
-.sezioneDx {
+.sezioneDx, .dx {
     color: red;
 }
 
-.sezioneSx {
+.sezioneSx, .sx {
     color: green;
 }
 
