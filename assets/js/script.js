@@ -112,15 +112,7 @@ function showResult(){
       document.getElementById("resultsPage").style.display = "block";
 }
 
-function deleteDomForResult(){
-  let questionElement = document.querySelector('.question');
-  let answerButtons = document.querySelector('.answer');
-  nextButton.style.display = "none";
-  while(answerButtons.firstChild){
-      answerButtons.removeChild(answerButtons.firstChild);
-      questionElement.removeChild(questionElement.firstChild);
-  }
-}
+
 
 // funzione che resetta il timer ad ogni domanda 
 
