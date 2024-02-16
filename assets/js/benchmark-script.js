@@ -2,7 +2,6 @@
 //fetch che aggiunge le domande 
 let question = [];
 window.onload = async() =>{ question = await fetchQuestions(10); // qui per cambiare il numero delle domande.
-  console.log(question);
 startQuiz();
 };
 

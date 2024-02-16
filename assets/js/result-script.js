@@ -1,3 +1,4 @@
+// Script Result -- Inizio 
 // RISULTATO ESITO ESAME
 const isTrue = false;
 const resultElement = document.getElementById('result');
@@ -39,4 +40,4 @@ wrong_QuestionsPercentage.style.display = 'block';
 
 
 // GRAFICO CIAMBELLA DI DOAMANDE
-
+// Fine script Result

@@ -12,7 +12,9 @@ titles font Outfit (60px)
 description font Inter (16px)
 
 */ 
-
+#benchmark {
+  display: none;
+}
 
 
 .main-graph{
@@ -97,7 +99,7 @@ description font Inter (16px)
     padding: 40px 30px 70px;
 }
 
-.quiz-app .container .question{
+.quiz-app .quizz-container .question{
     font-family: 'Outfit', sans-serif;
     font-size: 45px;
     margin-bottom: 30px;
@@ -107,7 +109,7 @@ description font Inter (16px)
     color: #fff;
 }
 
-.quiz-app .container .answer{
+.quiz-app .quizz-container .answer{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     display: grid;
@@ -115,7 +117,7 @@ description font Inter (16px)
 }
 
 
-.quiz-app .container .answer .btn{
+.quiz-app .quizz-container .answer .answer-btn{
     outline: none;
     padding: 15px 50px;
     margin: 9px;
@@ -127,10 +129,10 @@ description font Inter (16px)
     border: 1px outset;
     transition: color 0.3s ease;
 }
-.quiz-app .container .answer .btn:hover{
+.quiz-app .quizz-container .answer .answer-btn:hover{
     background: linear-gradient(90deg, #d20094, #900080);
 }
-.quiz-app .container .answer .btn:focus[disabled]{
+.quiz-app .quizz-container .answer .answer-btn:focus[disabled]{
   background: linear-gradient(90deg, #d20094, #900080);
 }
 

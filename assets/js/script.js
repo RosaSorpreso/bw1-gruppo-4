@@ -1,19 +1,19 @@
+// script che avvia il benchmark dando conferma ai termini
 document.querySelector('.btn').addEventListener('click', function() {
     let checkbox = document.getElementById('confermaPulsante');
     if (checkbox.checked) {
         document.getElementById('welcomePage').style.display = 'none';
-        document.getElementById('ciaone').style.display = 'block';
+        document.getElementById('benchmark').style.display = 'block';
     } else {
         alert("Devi accettare i termini prima di procedere.");
     }
 });
 
-
+// avvio benchmark
 
 //fetch che aggiunge le domande 
 let question = [];
 window.onload = async() =>{ question = await fetchQuestions(10); // qui per cambiare il numero delle domande.
-  console.log(question);
 startQuiz();
 };
 
@@ -56,7 +56,7 @@ function showQuestion(){
     answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerHTML = answer;
-        button.classList.add("btn");
+        button.classList.add("answer-btn");
         answerButtons.appendChild(button);
         if(answer === currentQuestion.correct_answer){
             button.dataset.correct = true;}
@@ -95,7 +95,7 @@ function handleNextButton(){
   currentQuestionIndex++;
   if(currentQuestionIndex < question.length){
     showQuestion();
-  }else {showScore();
+  }else {showResult(); // funzione non implementato.
   }
   lastAnswer = null;
 }
@@ -108,8 +108,8 @@ nextButton.addEventListener("click",()=>{
     }
 });
 
-// mostra lo score finale.
-function showScore(){
+// mostra lo score finale. // modificare script per mostrare result , modificato nome funzione
+function showResult(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
     nextButton.innerHTML = "play Again";
@@ -275,3 +275,47 @@ function showScore(){
 
 }
 // funzione che resetta il timer ad ogni domanda 
+
+// Script Result -- Inizio 
+// RISULTATO ESITO ESAME
+const isTrue = false;
+const resultElement = document.getElementById('result');
+
+resultElement.textContent = isTrue ? 'You passed the exam' : 'You did not pass the exam';
+resultElement.style.display = 'block'; // rendiamo visibile il risultato 
+
+  
+
+// RISULTATO ESITO DOMANDE GIUSTE/SBAGLIATE SULLE TOTALI
+const correctQuestions = 23;
+const totQuestion = 50;
+const correct_Questions = document.getElementById('correct-question');
+
+correct_Questions.textContent = `${correctQuestions}/${totQuestion}`;
+correct_Questions.style.display = 'block';
+
+const wrongQuestions = 14;
+const wrong_Questions = document.getElementById('wrong-question');
+
+wrong_Questions.textContent = `${wrongQuestions}/${totQuestion}`;
+wrong_Questions.style.display = 'block';
+
+
+
+
+// PERCENTUALE DOAMDE GIUSTE E SBAGLIATE
+const correctQuestionsPercentage = 23;
+const correct_QuestionsPercentage = document.getElementById('correct-result-percentage');
+
+correct_QuestionsPercentage.textContent = `${correctQuestionsPercentage}%`
+correct_QuestionsPercentage.style.display = 'block';
+
+const wrongQuestionsPercentage = 14;
+const wrong_QuestionsPercentage = document.getElementById('wrong-result-percentage');
+
+wrong_QuestionsPercentage.textContent = `${wrongQuestionsPercentage}%`
+wrong_QuestionsPercentage.style.display = 'block';
+
+
+// GRAFICO CIAMBELLA DI DOAMANDE
+// Fine script Result
