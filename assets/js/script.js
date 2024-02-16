@@ -108,15 +108,20 @@ nextButton.addEventListener("click",()=>{
 // mostra lo score finale. // modificare script per mostrare result , modificato nome funzione
 function showResult(){
 
-    resetState();
-    // questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
-    nextButton.innerHTML = "Result Page";
-    nextButton.style.display = "block";
-    nextButton.addEventListener("click", function(){
       document.getElementById("benchmark").style.display = "none";
       document.getElementById("resultsPage").style.display = "block";
-    })
-};
+}
+
+function deleteDomForResult(){
+  let questionElement = document.querySelector('.question');
+  let answerButtons = document.querySelector('.answer');
+  nextButton.style.display = "none";
+  while(answerButtons.firstChild){
+      answerButtons.removeChild(answerButtons.firstChild);
+      questionElement.removeChild(questionElement.firstChild);
+  }
+}
+
 // funzione che resetta il timer ad ogni domanda 
 
 function resetTimer() {
