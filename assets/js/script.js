@@ -114,7 +114,7 @@ function showResult(){
     nextButton.style.display = "block";
     nextButton.addEventListener("click", function(){
       document.getElementById("benchmark").style.display = "none";
-      document.getElementById("result-page").style.display = "block";
+      document.getElementById("resultsPage").style.display = "block";
     })
 };
 // funzione che resetta il timer ad ogni domanda 
