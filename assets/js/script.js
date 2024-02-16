@@ -31,7 +31,7 @@ const answerButtons = document.querySelector('.answer');
 const nextButton = document.querySelector('.next-btn');
 let timerId;
 let currentQuestionIndex = 0;
-let score = 0; 
+let score = 23; 
 
 
 // funzione di avvio del quiz
@@ -250,7 +250,7 @@ function setCircleDasharray() {
 
 // Fine script Result
 // RISULTATO ESITO ESAME
-let YourPercentage = 50;
+let YourPercentage = (score / 10) * 100; 
 
 let promosso = 60;
 // GRAFICO CIAMBELLA
