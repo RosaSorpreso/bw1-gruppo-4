@@ -105,14 +105,11 @@ nextButton.addEventListener("click",()=>{
     }
 });
 
-// mostra lo score finale. // modificare script per mostrare result , modificato nome funzione
+// mostra pagina di score finale// 
 function showResult(){
-
       document.getElementById("benchmark").style.display = "none";
       document.getElementById("resultsPage").style.display = "block";
 }
-
-
 
 // funzione che resetta il timer ad ogni domanda 
 
@@ -242,39 +239,6 @@ function setCircleDasharray() {
     .getElementById("base-timer-path-remaining")
     .setAttribute("stroke-dasharray", circleDasharray);
 }
-
-// CANCELLA PAGINA E RENDI VISIBILE
-
-// function togliBench(question){
-//     if (question.length == 10) {
-//         document.getElementById('ciaone').style.display = 'none';
-//         document.getElementById('welcomePage').style.display = 'block';
-//     } else {
-//         alert("Devi accettare i termini prima di procedere.");
-//     }
-// };
-
-// mostra lo score finale.
-function showScore(){
-    resetState();
-   
-    document.querySelector('.next-btn').addEventListener('click', function() {
-        if(question.length >= 10){
-            let nascondi = document.getElementById('confermaPulsante');
-       
-            document.getElementById('ciaone').style.display = 'none';
-            document.getElementById('welcomePage').style.display = 'block';
-        }else {
-            alert("Devi accettare i termini prima di procedere.");
-        }
-       
-    
-    });
-    
-
-}
-// funzione che resetta il timer ad ogni domanda 
-
 
 // GRAFICO CIAMBELLA DI DOAMANDE
 
