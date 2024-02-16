@@ -130,7 +130,11 @@ description font Inter (16px)
     transition: color 0.3s ease;
 }
 
-.quiz-app .quizz-container .answer .answer-btn:focus{
+ /*.quiz-app .quizz-container .answer .answer-btn:focus{
+  background: linear-gradient(90deg, #d20094, #900080);
+} */
+
+.quiz-app .quizz-container .answer .answer-btn.checked{
   background: linear-gradient(90deg, #d20094, #900080);
 }
 

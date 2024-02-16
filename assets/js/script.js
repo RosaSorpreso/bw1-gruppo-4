@@ -57,7 +57,12 @@ function showQuestion(){
         answerButtons.appendChild(button);
         if(answer === currentQuestion.correct_answer){
             button.dataset.correct = true;}
-        button.addEventListener("click", selectAnswer);
+        button.addEventListener("click", function(e){
+        const activeBtns = document.querySelectorAll('.answer-btn');
+        activeBtns.forEach(a => a.classList.remove('checked'));
+        button.classList.add('checked');    
+        selectAnswer(e);
+        });
         clearTimeout(timerId);
       timerId = setTimeout(() => {
       handleNextButton();}, 30000);
@@ -92,13 +97,14 @@ function handleNextButton(){
   currentQuestionIndex++;
   if(currentQuestionIndex < question.length){
     showQuestion();
-  }else {showResult(); // funzione non implementato.
+  }else {showResult();
   }
   lastAnswer = null;
 }
 
 nextButton.addEventListener("click",()=>{
-    if(currentQuestionIndex < question.length){
+  
+  if(currentQuestionIndex < question.length){
         handleNextButton();
     }else{
         startQuiz();
