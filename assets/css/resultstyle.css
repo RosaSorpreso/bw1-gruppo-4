@@ -1,22 +1,22 @@
 #result-page{
     display: none;
+    
 }
 
 
-
-.container {
+#content {
     color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
     position: absolute;
-    margin-top: 50%;
-    margin-left: 135px;
-    margin-right: 135px;
+    margin-top: 10%;
 }
 
-h2 {
+
+
+.h2-result {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
 }
@@ -32,6 +32,8 @@ h2 {
     rotate: 135deg;
     position: absolute;
     align-items: center;
+    left: 50%;
+    top: 50%;
 }
 
 .content {

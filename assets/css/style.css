@@ -8,11 +8,13 @@ body{
     background-size: cover;
     font-family: 'Outfit', sans-serif;
     color: white;
+   
+}
+
+main{
     margin-left: 90px ;
     margin-top: 30px ;
 }
-
-
 header img{
     width: 13%;
 }
