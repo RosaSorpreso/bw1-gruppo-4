@@ -10,7 +10,7 @@ body{
     color: white;
    
 }
-#resultsPage{
+#resultsPage, #feedback {
     display: none;
 }
 main{

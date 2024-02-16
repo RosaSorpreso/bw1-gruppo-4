@@ -72,3 +72,9 @@ const wrong_QuestionsPercentage = document.getElementById("wrong-result-percenta
 wrong_QuestionsPercentage.textContent = `${wrongQuestionsPercentage}%`;
 wrong_QuestionsPercentage.style.display = "block";
 
+// passare a pagina feedback
+
+document.querySelector('#feedback-page').addEventListener('click', function(){
+  document.getElementById('resultsPage').style.display ='none';  
+  document.getElementById('feedback').style.display ='block';
+})
