@@ -39,12 +39,12 @@ body {
     font-size: 50px;
 }
 .sezioneDx, .dx {
-    color: red;
+    color: #D20094;
     text-align: right;
 }
 
 .sezioneSx, .sx {
-    color: green;
+    color: #00FFFF;
     text-align: left;
 }
 
