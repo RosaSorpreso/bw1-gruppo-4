@@ -129,13 +129,10 @@ description font Inter (16px)
     border: 1px outset;
     transition: color 0.3s ease;
 }
-.quiz-app .quizz-container .answer .answer-btn:hover{
-    background: linear-gradient(90deg, #d20094, #900080);
-}
-.quiz-app .quizz-container .answer .answer-btn:focus[disabled]{
+
+.quiz-app .quizz-container .answer .answer-btn:focus{
   background: linear-gradient(90deg, #d20094, #900080);
 }
-
 
 .next-btn{
   position: relative;
