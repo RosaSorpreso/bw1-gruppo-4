@@ -1,5 +1,5 @@
 // RISULTATO ESITO ESAME
-let YourPercentage = 20;
+let YourPercentage = 100;
 let promosso = 60;
 // GRAFICO CIAMBELLA
 
@@ -13,17 +13,12 @@ let votoDiPartenza = 0, // parte da 0 mi riempie il 25 percento
 let progress = setInterval(() => { // funzione a intervalli specificati da speed
   votoDiPartenza++;
 
-  graficoCiambella.style.background = `conic-gradient(#00FFFF ${votoDiPartenza * 3.6}deg, #D20094 0deg)`
+  graficoCiambella.style.background = `conic-gradient(#00FFFF ${YourPercentage * 3.6}deg, #D20094 0deg)`
 
   if (votoDiPartenza === votoPercentualeFinale) {
     clearInterval(progress); // una volta raggiunta la poszione a scelta
   }
 }, speed);
-
-
-
-
-
 
 
 let resultElement = document.getElementById('result');

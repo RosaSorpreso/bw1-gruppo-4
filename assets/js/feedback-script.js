@@ -21,9 +21,9 @@ function btnClick() {
   let btn = document.querySelector("#btnLink");
   let imputText = document.querySelector(".insertText");
   if (imputText === "") {
-    btn.disabled() = true;
+    btn.disabled = true;
   } else {
-    btn.disabled() = false;
+    btn.disabled = false;
   }
 }
 
