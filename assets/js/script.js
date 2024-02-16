@@ -1,21 +1,18 @@
 // script che avvia il benchmark dando conferma ai termini
-document.querySelector('.btn').addEventListener('click', function() {
+let question = [];
+document.querySelector('.btn').addEventListener('click', async function() {  
     let checkbox = document.getElementById('confermaPulsante');
     if (checkbox.checked) {
         document.getElementById('welcomePage').style.display = 'none';
         document.getElementById('benchmark').style.display = 'block';
+        question = await fetchQuestions(10);
+        startQuiz();
     } else {
         alert("Devi accettare i termini prima di procedere.");
     }
 });
 
-// avvio benchmark
-
 //fetch che aggiunge le domande 
-let question = [];
-window.onload = async() =>{ question = await fetchQuestions(10); // qui per cambiare il numero delle domande.
-startQuiz();
-};
 
 async function fetchQuestions(numQuestions) {
   try {
@@ -110,11 +107,16 @@ nextButton.addEventListener("click",()=>{
 
 // mostra lo score finale. // modificare script per mostrare result , modificato nome funzione
 function showResult(){
+
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
-    nextButton.innerHTML = "play Again";
+    nextButton.innerHTML = "Result Page";
     nextButton.style.display = "block";
-}
+    nextButton.addEventListener("click", function(){
+      document.getElementById("benchmark").style.display = "none";
+      document.getElementById("result-page").style.display = "block";
+    })
+};
 // funzione che resetta il timer ad ogni domanda 
 
 function resetTimer() {
