@@ -82,61 +82,51 @@
 
 <!-- Inizio Result-->
 <div id="result-page">
-    <div class="content">
-        <h2 class="h2-result">Result</h2>
-
-        <p>The summary of your answer:</p>
+    <div id="topTitle">
+        <h2 class="bold">Results</h2>
+        <p>The summary of your answers:</p>
     </div>
 
-    <div class="container">
-        <div class="content1">
-            <h3>Congratulation!</h3>
+    <div id="main">
 
-            <!-- #result NECESSITA DI FUNZIONE DINAMICA -->
-            <h3 id="result">You passed the exam</h3>
-            <p>We'll send you the certificate in few minutes.Check yout email
-                (including promotions/span folder)
-            </p>
+        <!--SEZIONEsx % DOMANDE CORRETTE -->
+        
+        <div class="sezioneSx">
+            <h3>Correct</h3>
+            <h3 id="correct-result-percentage" class="bold sx">66.7%</h3>
+            <p id="correct-question">4/6 questions</p>
         </div>
 
-
-        <!-- left  div -->
-        <div class="left-centered-div">
-            <P>Correct</P>
-             <!-- IL p SOTTO NECESSITA DI FUNZIONE DINAMICA -->
-            <P id="correct-result-percentage">66.7%</P>
-            <span id="correct-result-percentage1"></span>
-            <!-- IL p SOTTO NECESSITA DI FUNZIONE DINAMICA -->
-            <P id="correct-question">4/6 questions</P>
-        </div>
-
-        <!-- left-right  div -->
-
-
-        <div class="right-centered-div">
-            <p>Wrong</p>
-               <!-- IL p SOTTO NECESSITA DI FUNZIONE DINAMICA -->
-            <P id="wrong-result-percentage">33.33%</P>
-              <!-- IL p SOTTO NECESSITA DI FUNZIONE DINAMICA -->
-              <P id="wrong-question">2/6 questions</P>
-        </div>
-
-        <!-- left-right div -->
-
-
-        <!-- CIRCLE -->
+        <!-- SEZIONE CENTRALE GRAFICO A CIAMBELLLA -->
         <div class="circle">
-            
+
+            <div class="hole">
+
+                <h3 id="complimenti">Congratulations!</h3>
+                <h3 id="result"class="esito">You passed the exam.</h3>
+                <p id="certificato">
+                    We'll send the certificate in few minutes. Check your email (inclouding promotions/
+                    spam
+                    floder)
+                </p>
+            </div>
         </div>
 
+        <!-- SEZIONEdx % DOMANDE SBAGLIATE -->
+        <div class="sezioneDx">
 
-        <!-- button NECESSITA DI FUNZIONE DINAMICA -->
-        <a>
-            <button>RATE US</button>
-        </a>
-       
+            <h3>Wrong</h3>
+
+            <h3 id="wrong-result-percentage" class="bold dx">33.3%</h3>
+
+            <p id="wrong-question">2/6 questions</p>
+        </div>
     </div>
+   
+        <a href="feedback.html">RATE US</a>
+     
 </div>
+
 </main>
 <!-- Fine Parte Result-->
 <script src="./assets/js/script.js"></script>
