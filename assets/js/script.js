@@ -78,7 +78,7 @@ let lastAnswer;
 function selectAnswer(e){
   const selectedBtn = e.target;
   lastAnswer = selectedBtn;
-  Array.from(answerButtons.children).forEach(button =>{ // lo lascio solo per far arrabbiare i senior ha ha.
+  [...answerButtons.children].forEach(button =>{ 
     button.disabled = false;
   });
   nextButton.style.display = "block";
