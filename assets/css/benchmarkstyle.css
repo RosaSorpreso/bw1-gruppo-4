@@ -136,13 +136,14 @@ description font Inter (16px)
 
 .next-btn{
   position: relative;
-  left: 85%;
+  margin: 50px auto;
   background-color: #00FFFF;
   color: black;
   padding: 10px 35px;
   font-weight: bold;
   box-shadow: 0 0 5px #00aced, 0 0 8px #00aced;
   cursor: pointer; 
+  border: none;
 }
 
 /* footer */ 
